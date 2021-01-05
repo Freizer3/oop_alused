@@ -1,7 +1,7 @@
 /*
  *  Muutujate kasutamise näide
  *  autor - Mario Jõelo
- *  ülesanne 2.1
+ *  ülesanne 1.4a
  * */
 
 
@@ -13,14 +13,13 @@ public class test {
         // lubame kasutajale sisestada midagi
         Scanner sisend = new Scanner(System.in);
         // selgitame kasutajale, mida tuleb sisestada
-        System.out.println("Palun sisesta pilvede kõrgus: ");
-        // salvestame kasutaja sisestatud väärtuse
-        double pilvedeKorgus = sisend.nextInt();
-        // kontroll
-        if (pilvedeKorgus > 6.0) {
-            System.out.println("Need on ülemised pilved");
-        } else {
-            System.out.println("Need ei ole ülemised pilved");
-        }
+        System.out.println("Sisestage ainepunktide arv: ");
+        int aine = sisend.nextInt();
+        int tund = Math.multiplyExact(aine, 26);
+        System.out.println("Sisestage nädalate arv: ");
+        int nadal = sisend.nextInt();
+        float tulemus = Math.floorDiv(tund, nadal);
+        System.out.println(tulemus);
     }
-}
+    }
+
