@@ -1,7 +1,7 @@
 /*
- *  while tsükkel - näide
+ *  täringumäng - näide
  *  autor - Mario Jõelo
- *  ülesanne 3.1
+ *  ülesanne 3.3
  * */
 
 
@@ -13,17 +13,18 @@ public class test {
         // lubame kasutajale sisestada midagi
         Scanner sisend = new Scanner(System.in);
         // selgitame kasutajale, mida tuleb sisestada
-        System.out.println("Sisesta mitu korda tuleb äratada: ");
-        int mituKorda = sisend.nextInt();
-        int kord = 1;
-
-        while (kord <= mituKorda) {
-            System.out.println("Tõuse ja sära!");
-            kord++;
+        System.out.println("Täringute arv: ");
+        int taringuteArv = sisend.nextInt();
+        int taring = (int) Math.round(Math.random()) * 6;
+        System.out.println(taring);
+        while (taring != taringuteArv) {
+            taring = (int) Math.round(Math.random() * 6);
+            System.out.println(taring);
         }
     }
+    }
 
-}
+
 
 
 
