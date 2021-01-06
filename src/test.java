@@ -1,7 +1,7 @@
 /*
- *  Muutujate kasutamise näide
+ *  while tsükkel - näide
  *  autor - Mario Jõelo
- *  ülesanne 1.4a
+ *  ülesanne 3.1
  * */
 
 
@@ -13,13 +13,17 @@ public class test {
         // lubame kasutajale sisestada midagi
         Scanner sisend = new Scanner(System.in);
         // selgitame kasutajale, mida tuleb sisestada
-        System.out.println("Sisestage ainepunktide arv: ");
-        int aine = sisend.nextInt();
-        int tund = Math.multiplyExact(aine, 26);
-        System.out.println("Sisestage nädalate arv: ");
-        int nadal = sisend.nextInt();
-        float tulemus = Math.floorDiv(tund, nadal);
-        System.out.println(tulemus);
+        System.out.println("Sisesta mitu korda tuleb äratada: ");
+        int mituKorda = sisend.nextInt();
+        int kord = 1;
+
+        while (kord <= mituKorda) {
+            System.out.println("Tõuse ja sära!");
+            kord++;
+        }
     }
-    }
+
+}
+
+
 
