@@ -9,27 +9,12 @@ import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-        // defineerime muutujad
-        // lubame kasutajale sisestada midagi
+        int[] vastuvoetud = {2803, 2626, 2359, 1927, 2236, 2281, 2394, 2484, 2468};
         Scanner sisend = new Scanner(System.in);
-        // selgitame kasutajale, mida tuleb sisestada
-        System.out.println("Sisesta ringide arv: ");
-        int ringideArv = sisend.nextInt();
-        int uks = 1;
-        if (ringideArv % 2 == 0) {
-            (ringideArv - uks);
-        }
-        int ringid = 0;
-        int porgandid = 0;
-        while (ringid < ringideArv) {
-            ringid++;
-            porgandid = porgandid + 2;
-        }
-        System.out.println(porgandid);
-
-    }
-
-    private static void ringideArv(int round) {
+        System.out.println("Sisesta aasta: ");
+        int aasta = sisend.nextInt();
+        int massiiviIndeks = aasta - 2011;
+        System.out.println("Vastuvõetud on " + vastuvoetud[massiiviIndeks]);
     }
 }
 
