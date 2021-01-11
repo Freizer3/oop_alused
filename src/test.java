@@ -1,7 +1,7 @@
 /*
  *  täringumäng - näide
  *  autor - Mario Jõelo
- *  ülesanne 3.3
+ *  ülesanne 3.2
  * */
 
 
@@ -13,16 +13,25 @@ public class test {
         // lubame kasutajale sisestada midagi
         Scanner sisend = new Scanner(System.in);
         // selgitame kasutajale, mida tuleb sisestada
-        System.out.println("Täringute arv: ");
-        int taringuteArv = sisend.nextInt();
-        int taring = (int) Math.round(Math.random()) * 6;
-        System.out.println(taring);
-        while (taring != taringuteArv) {
-            taring = (int) Math.round(Math.random() * 6);
-            System.out.println(taring);
+        System.out.println("Sisesta ringide arv: ");
+        int ringideArv = sisend.nextInt();
+        int uks = 1;
+        if (ringideArv % 2 == 0) {
+            (ringideArv - uks);
         }
+        int ringid = 0;
+        int porgandid = 0;
+        while (ringid < ringideArv) {
+            ringid++;
+            porgandid = porgandid + 2;
+        }
+        System.out.println(porgandid);
+
     }
+
+    private static void ringideArv(int round) {
     }
+}
 
 
 
