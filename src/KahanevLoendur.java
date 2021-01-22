@@ -1,8 +1,10 @@
 public class KahanevLoendur {
     private int vaartus;   // objekti muutuja (atribuut), mis hoiab meeles loenduri väärtust
+    private int algvaartus;
 
     public KahanevLoendur(int vaartusAlguses) {
         this.vaartus = vaartusAlguses;
+        this.algvaartus = vaartusAlguses;
     }
 
     public void valjastaVaartus() {
@@ -20,6 +22,10 @@ public class KahanevLoendur {
 
     public void reset() {
         this.vaartus = 0;
+    }
+
+    public void algvaartuseta() {
+        this.vaartus = this.algvaartus;
     }
     // ja siia ülejäänud vajalikud meetodid
 }
