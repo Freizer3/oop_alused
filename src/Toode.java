@@ -9,10 +9,8 @@ public class Toode {
         this.kogus = kogus;
     }
 
-    public void valjastaToode(String tooteNimetus, Double hindSisestus, int kogusSisestus) {
-        this.Nimi = tooteNimetus;
-        this.hind = hindSisestus;
-        this.kogus = kogusSisestus;
+    public void valjastaToode() {
+        System.out.println(this.Nimi + ", " + this.hind + "€, " + this.kogus);
     }
 
 }
