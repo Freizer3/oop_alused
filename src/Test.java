@@ -1,13 +1,8 @@
 public class Test {
     public static void main(String[] args) {
-        KahanevLoendur loendur = new KahanevLoendur(10);
-
-        loendur.valjastaVaartus();
-
-        loendur.kahane();
-        loendur.valjastaVaartus();
-
-        loendur.kahane();
-        loendur.valjastaVaartus();
+        Ristkylik r1 = new Ristkylik();
+        r1.setLaius(4.6);
+        r1.setKorgus(7.2);
+        System.out.println(r1);
     }
 }
