@@ -41,6 +41,10 @@ public class Inimene {
         while (kmi() < 19) {
             this.mass += 1;
         }
+        while (kmi() > 24.9) {
+            this.mass -= 1;
+        }
+
     }
 
 
